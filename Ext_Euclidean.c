@@ -2,19 +2,19 @@
 void gcdExtended(int,int);
 int main(int argc, char const *argv[]){
 
-	int x,y;
+	int a,b;
 	printf("Enter a and m:-\n");
-	scanf("%d %d",&x,&y);
-	if (x==y||x<0||y<0)
+	scanf("%d %d",&a,&b);
+	if (a==b||a<0||b<0)
 	{
 		printf("Multiplicative Inverse doesn't exist\n");
 	}
-	else if (x>y)
+	else if (a>b)
 	{
-		gcdExtended(x,y);
+		gcdExtended(a,b);
 	}
 	else{
-		gcdExtended(y,x);
+		gcdExtended(b,a);
 	}
 	return 0;
 }
